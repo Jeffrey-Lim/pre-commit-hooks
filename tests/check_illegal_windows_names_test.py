@@ -55,7 +55,7 @@ def test_check_illegal_windows_names_matches(hook_re, s):
         pytest.param('com.dat', id='com without digit'),
         pytest.param('.python-version', id='starts with period'),
         pytest.param(' pseudo nan', id='with spaces'),
-        pytest.param('!@#$%^&*=≤\'~`¡¿€🤗', id='with allowed characters'),
+        pytest.param('!@#$%^&;=≤\'~`¡¿€🤗', id='with allowed characters'),
         pytest.param('path.to/file.py', id='standard path'),
     ),
 )
