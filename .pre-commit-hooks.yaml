@@ -44,7 +44,7 @@
     name: check illegal windows names
     entry: Illegal Windows filenames detected
     language: fail
-    files: '(?i)((^|/)(CON|PRN|AUX|NUL|COM[\d¹²³]|LPT[\d¹²³]|CLOCK\$)(\.|/|$)|[<>:\"\\|?*\x00-\x1F]|/[^/]*[\.\s]/|[^/]*[\.\s]$)'
+    files: '(?i)((^|/)(CON|PRN|AUX|NUL|COM[\d¹²³]|LPT[\d¹²³])(\.|/|$)|[<>:\"\\|?*\x00-\x1F]|/[^/]*[\.\s]/|[^/]*[\.\s]$)'
 -   id: check-json
     name: check json
     description: checks json files for parseable syntax.
